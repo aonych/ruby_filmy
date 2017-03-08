@@ -2,7 +2,7 @@
 
 <p>
   <strong>Src:</strong>
-  <%= @gist.src %>
+  <%= <pre class="highlight"><%= raw Rouge.highlight @gist.src, @gist.lang, 'html' %></pre> %>
 </p>
 
 <p>
