@@ -56,3 +56,14 @@ gem 'rails_12factor', group: :production
 ruby "2.3.3"
 
 gem 'rouge', '~> 2.0.0'
+
+# Make all the necessary Bootstrap files available to the current application
+gem 'bootstrap-sass', '3.3.7'
+gem 'bootstrap-sass-extras', '0.0.7'
+
+# Optionally install
+group :development do
+  # gem 'quiet_assets' # see https://github.com/evrone/quiet_assets
+  gem 'rubocop', require: false # for Atom editor
+  gem 'scss_lint', require: false # for Atom editor
+end
