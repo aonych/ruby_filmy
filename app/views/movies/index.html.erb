@@ -5,7 +5,7 @@
 <table class="table table-striped">
   <thead>
     <tr>
-      <th><%= model_class.human_attribute_name(:id) %></th>
+      <th><%= model_class.human_attribute_name(:lp) %></th>
       <th><%= model_class.human_attribute_name(:tytuł) %></th>
       <th><%= model_class.human_attribute_name(:kraj_produkcji) %></th>
       <th><%= model_class.human_attribute_name(:rok_premiery) %></th>
@@ -13,10 +13,10 @@
     </tr>
   </thead>
   <tbody>
-    <% @movies.each do |movie| %>
+    <% @movies.each_with_index do |movie, i| %>
       <tr>
-        <td><%= movie.id %></td>
-          <td><%= movie.title %></td>
+        <td><%= (i+1) %></td>
+		  <td><%= movie.title %></td>
           <td><%= movie.country %></td>
           <td><%= movie.year %></td>
         <td>
