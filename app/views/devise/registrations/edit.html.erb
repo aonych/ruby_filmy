@@ -1,0 +1,27 @@
+<div class="container">
+  <div class="form-signin">
+    <h2 class="form-signin-heading">Edytuj konto</h2>
+
+    <div class="form-group">
+      <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name),
+      :defaults => { :input_html => { :class => "form-control" } }, html: { method: :put }) do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :email, required: true, autofocus: true, class: "form-control" %>
+
+        <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
+          <p>Currently waiting confirmation for: <%= resource.unconfirmed_email %></p>
+        <% end %>
+
+        <%= f.input :password, autocomplete: "off", placeholder: "Zostaw puste pole jeśli nie chcesz zmieniać hasła", required: false, class: "form-control" %>
+        <%= f.input :password_confirmation, required: false, class: "form-control" %>
+        <%= f.input :current_password, required: true, class: "form-control", placeholder: "Podaj aktualne hasło" %>
+    </div>
+
+      <%= f.button :submit, "Edytuj", :class => "btn btn-lg btn-primary btn-block" %>
+      <% end %>
+
+      <p>Chcesz nas opuścić? <%= link_to "Usuń konto", registration_path(resource_name), data: { confirm: "Jesteś pewien, że chcesz usunąć konto?" }, method: :delete %></p>
+      <%= link_to "Wróć", :back %>
+
+  </div>
+</div>

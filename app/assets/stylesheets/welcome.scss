@@ -8,11 +8,16 @@
 	width: 65%;
 }
 
-.form-signin {
-	background-color: #e6e6e6;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 100px;
-	width: 80%;
+.jumbotron {
+	padding: 20px;
+	text-align: center;
+	.btn-success{
+		padding: 20px 100px;
+		font-size: 25px;
+	}
+	p{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
 }

@@ -1,10 +1,24 @@
-# Aleksandra Onych (zaliczenie)
--------------------
-| Ruby | Rails | Baza danych | Framework | Gemy |
-| ------ | ------ | ------ | ------ | ------ |
-| 2.3.3 | 5.0.2 | SQLite, PostgreSQL | Bootstrap | 
+# README
 
-### [ ] [Link do aplikacji](https://quiet-everglades-56380.herokuapp.com/) 
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-# Temat: Filmy animowane
-Aplikacja umożliwia (po poprzednim zalogowaniu się użytkownika) na przeglądanie, dodawanie, edytowanie oraz usuwanie filmów anonimowych.
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...

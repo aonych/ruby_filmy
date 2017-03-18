@@ -40,8 +40,9 @@ GEM
       tzinfo (~> 1.1)
     arel (7.1.4)
     ast (2.3.0)
-    autoprefixer-rails (6.7.6)
+    autoprefixer-rails (6.7.7)
       execjs
+    bcrypt (3.1.11-x86-mingw32)
     bootstrap-sass (3.3.7)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
@@ -57,6 +58,12 @@ GEM
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
     debug_inspector (0.0.2)
+    devise (4.2.1)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.1)
+      responders
+      warden (~> 1.2.3)
     erubis (2.7.0)
     execjs (2.7.0)
     globalid (0.3.7)
@@ -83,11 +90,12 @@ GEM
     nio4r (2.0.0)
     nokogiri (1.7.0.1-x86-mingw32)
       mini_portile2 (~> 2.1.0)
+    orm_adapter (0.5.0)
     parser (2.4.0.0)
       ast (~> 2.2)
     pg (0.19.0-x86-mingw32)
     powerpack (0.1.1)
-    puma (3.7.1)
+    puma (3.8.2)
     rack (2.0.1)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -108,11 +116,6 @@ GEM
       nokogiri (~> 1.6)
     rails-html-sanitizer (1.0.3)
       loofah (~> 2.0)
-    rails_12factor (0.0.3)
-      rails_serve_static_assets
-      rails_stdout_logging
-    rails_serve_static_assets (0.0.5)
-    rails_stdout_logging (0.0.5)
     railties (5.0.2)
       actionpack (= 5.0.2)
       activesupport (= 5.0.2)
@@ -121,6 +124,8 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.2.1)
     rake (12.0.0)
+    responders (2.3.0)
+      railties (>= 4.2.0, < 5.1)
     rouge (2.0.7)
     rubocop (0.47.1)
       parser (>= 2.3.3.1, < 3.0)
@@ -139,6 +144,9 @@ GEM
     scss_lint (0.52.0)
       rake (>= 0.9, < 13)
       sass (~> 3.4.20)
+    simple_form (3.4.0)
+      actionpack (> 4, < 5.1)
+      activemodel (> 4, < 5.1)
     sprockets (3.7.1)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -157,9 +165,11 @@ GEM
       thread_safe (~> 0.1)
     tzinfo-data (1.2017.1)
       tzinfo (>= 1.0.0)
-    uglifier (3.1.4)
+    uglifier (3.1.8)
       execjs (>= 0.3.0, < 3)
     unicode-display_width (1.1.3)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (3.4.0)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -173,20 +183,22 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  bcrypt (~> 3.1.11)
   bootstrap-sass (= 3.3.7)
   bootstrap-sass-extras (= 0.0.7)
   byebug
   coffee-rails (~> 4.2)
+  devise (~> 4.2)
   jbuilder (~> 2.5)
   jquery-rails
   pg (= 0.19.0)
   puma (~> 3.0)
   rails (~> 5.0.2)
-  rails_12factor
   rouge (~> 2.0.0)
   rubocop
   sass-rails (~> 5.0)
   scss_lint
+  simple_form (~> 3.4)
   sqlite3
   turbolinks (~> 5)
   tzinfo-data
