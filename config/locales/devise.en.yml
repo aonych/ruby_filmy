@@ -9,7 +9,7 @@ en:
     failure:
       already_authenticated: "Jesteś już zalogowany."
       inactive: "Your account is not activated yet."
-      invalid: "Invalid %{authentication_keys} or password."
+      invalid: "Niepoprawny %{authentication_keys} lub hasło."
       locked: "Your account is locked."
       last_attempt: "You have one more attempt before your account is locked."
       not_found_in_database: "Niepoprawny %{authentication_keys} lub hasło."
@@ -45,7 +45,7 @@ en:
       update_needs_confirmation: "You updated your account successfully, but we need to verify your new email address. Please check your email and follow the confirm link to confirm your new email address."
       updated: "Twoje konto zostało zaktualizowane pomyślnie."
     sessions:
-      signed_in: "Zalogowane."
+      signed_in: "Zalogowano."
       signed_out: "Wylogowano."
       already_signed_out: "Wylogowano."
     unlocks:
