@@ -7,8 +7,6 @@
     <div class="field">
       <%= f.label :title_cont, "Wyszukaj po tytule" %>
       <%= f.text_field :title_cont %>
-    </div>
-    <div class="field">
       <%= f.label :country_cont, "Wyszukaj po kraju" %>
       <%= f.text_field :country_cont %>
     </div>
@@ -20,9 +18,9 @@
     <thead>
       <tr>
         <th><%= model_class.human_attribute_name(:lp) %></th>
-        <th><%= model_class.human_attribute_name(:tytuł) %></th>
-        <th><%= model_class.human_attribute_name(:kraj_produkcji) %></th>
-        <th><%= model_class.human_attribute_name(:rok_premiery) %></th>
+        <th><%= sort_link @search, :title, "Tytuł "%><span class="glyphicon glyphicon-sort" aria-hidden="true"></th>
+        <th><%= sort_link @search, :country, " Kraj produkcji "%><span class="glyphicon glyphicon-sort" aria-hidden="true"></th>
+        <th><%= sort_link @search, :year, " Rok premiery "%><span class="glyphicon glyphicon-sort" aria-hidden="true"></th>
         <th><%=t '.actions', default: t("helpers.akcje") %></th>
       </tr>
     </thead>

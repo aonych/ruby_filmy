@@ -8,7 +8,7 @@
 # Temat: Filmy animowane
 Aplikacja umożliwia (po poprzednim zalogowaniu się użytkownika) na przeglądanie, dodawanie, edytowanie oraz usuwanie filmów anonimowych.
 
-#Gemy
+# Gemy
 - simple_form - proste dodawanie formularzy
 - devise - autoryzacja
-- ransack - wyszukiwanie po napisach
+- ransack - wyszukiwanie po napisach i sortowanie danych w tabeli
