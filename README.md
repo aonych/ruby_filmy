@@ -6,7 +6,7 @@
 ### [ ] [Link do aplikacji](https://quiet-everglades-56380.herokuapp.com/) 
 
 # Temat: Filmy animowane
-Aplikacja umożliwia (po poprzednim zalogowaniu się użytkownika) na przeglądanie, dodawanie, edytowanie oraz usuwanie filmów anonimowych.
+Aplikacja umożliwia (po poprzednim zalogowaniu się użytkownika) na przeglądanie, dodawanie, edytowanie oraz usuwanie filmów animowanych.
 
 # Gemy
 - simple_form - proste dodawanie formularzy
