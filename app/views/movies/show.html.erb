@@ -5,23 +5,23 @@
 
 <div class="fieldset">
   <dl>
-      <dt class="label label-default"><%= model_class.human_attribute_name(:title) %></dt>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:tytuł) %></dt>
       <dd><pre class="prettyprint"><%= @movie.title %></pre></dd>
-      <dt class="label label-default"><%= model_class.human_attribute_name(:country) %></dt>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:kraj_produkcji) %></dt>
       <dd><pre class="prettyprint"><%= @movie.country %></pre></dd>
-      <dt class="label label-default"><%= model_class.human_attribute_name(:year) %></dt>
+      <dt class="label label-default"><%= model_class.human_attribute_name(:rok_premiery) %></dt>
       <dd><pre class="prettyprint"><%= @movie.year %></pre></dd>
   </dl>
 </div>
 
 <div class="form-group">
-  <%= link_to t('.back', default: t("helpers.links.back")),
+  <%= link_to t('.back', default: t("Wróć")),
               movies_path, class: 'btn btn-default'  %>
-  <%= link_to t('.edit', default: t("helpers.links.edit")),
+  <%= link_to t('.edit', default: t("Edytuj")),
               edit_movie_path(@movie), class: 'btn btn-default' %>
-  <%= link_to t('.destroy', default: t("helpers.links.destroy")),
+  <%= link_to t('.destroy', default: t("Usuń")),
               movie_path(@movie),
               method: 'delete',
-              data: { confirm: t('.confirm', default: t("helpers.links.confirm", default: 'Are you sure?')) },
+              data: { confirm: t('.confirm', default: 'Jesteś pewien, że chcesz usunąć ten film?') },
               class: 'btn btn-danger' %>
 </div>
